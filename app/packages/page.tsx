@@ -171,7 +171,7 @@ export default function PackagesPage() {
                 <p className="text-sm text-white/60 mb-4">
                   Have questions about our packages? Our team is here to help.
                 </p>
-                <ButtonLink href="/contact" variant="outline">
+                <ButtonLink href="/contact" variant="outline" className="w-full sm:w-auto">
                   Contact Support
                 </ButtonLink>
               </div>

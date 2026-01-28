@@ -68,9 +68,9 @@ export default function ResellerPage() {
               <p className="text-lg text-white/70 max-w-2xl mx-auto mb-10">
                 Launch your premium IPTV business with Australian infrastructure, instant activation, and wholesale pricing designed for growth.
               </p>
-              <div className="flex flex-wrap gap-4 justify-center">
-                <ButtonLink href="/contact">Apply Now</ButtonLink>
-                <ButtonLink href="/packages" variant="outline">View Pricing</ButtonLink>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <ButtonLink href="/contact" className="w-full sm:w-auto">Apply Now</ButtonLink>
+                <ButtonLink href="/packages" variant="outline" className="w-full sm:w-auto">View Pricing</ButtonLink>
               </div>
             </div>
 
@@ -105,7 +105,7 @@ export default function ResellerPage() {
               </p>
             </div>
 
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
               {benefits.map((benefit) => {
                 const Icon = benefit.icon;
                 return (
@@ -179,9 +179,9 @@ export default function ResellerPage() {
                 <p className="text-white/70 max-w-2xl mx-auto mb-8">
                   Apply for our reseller program and get access to wholesale pricing, professional tools, and dedicated support. We'll respond within 24 hours.
                 </p>
-                <div className="flex flex-wrap gap-4 justify-center">
-                  <ButtonLink href="/contact">Submit Application</ButtonLink>
-                  <ButtonLink href="/packages" variant="outline">View Packages</ButtonLink>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <ButtonLink href="/contact" className="w-full sm:w-auto">Submit Application</ButtonLink>
+                  <ButtonLink href="/packages" variant="outline" className="w-full sm:w-auto">View Packages</ButtonLink>
                 </div>
               </div>
             </div>

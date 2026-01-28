@@ -290,16 +290,16 @@ export default function HomePage() {
                 <Sparkles className="h-4 w-4 text-gold-400" />
                 Australia-first streaming, built for premium viewers
               </div>
-              <h1 className="font-display mt-6 text-4xl font-semibold leading-tight text-white md:text-5xl lg:text-6xl">
+              <h1 className="font-display mt-6 text-3xl font-semibold leading-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
                 Australia’s #1 Premium IPTV Streaming Service
               </h1>
-              <p className="mt-5 text-lg text-white/75 md:text-xl">
+              <p className="mt-5 text-base text-white/75 sm:text-lg md:text-xl">
                 45,000+ Live Channels • 140,000+ Movies & Series • 4K Ultra HD •
                 Zero Buffering
               </p>
-              <div className="mt-8 flex flex-wrap gap-4">
-                <ButtonLink href="/packages">Get Started</ButtonLink>
-                <ButtonLink href="/packages" variant="outline">
+              <div className="mt-8 flex flex-col sm:flex-row gap-4">
+                <ButtonLink href="/packages" className="w-full sm:w-auto">Get Started</ButtonLink>
+                <ButtonLink href="/packages" variant="outline" className="w-full sm:w-auto">
                   View Packages
                 </ButtonLink>
               </div>
@@ -438,11 +438,10 @@ export default function HomePage() {
                   </div>
                 )}
                 <GlassCard
-                  className={`flex h-full flex-col gap-6 p-8 ${
-                    plan.highlight
+                  className={`flex h-full flex-col gap-6 p-8 ${plan.highlight
                       ? "relative z-20 border-gold-400/50 shadow-glow"
                       : "border-white/10"
-                  }`}
+                    }`}
                 >
                   <div>
                     <p className="text-sm uppercase tracking-[0.3em] text-white/60">
@@ -485,7 +484,7 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
-            className="mx-auto mt-10 grid max-w-6xl gap-4 md:grid-cols-3 lg:grid-cols-6"
+            className="mx-auto mt-10 grid max-w-6xl gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-6"
           >
             {categories.map((category) => {
               const Icon = category.icon;
@@ -599,13 +598,12 @@ export default function HomePage() {
                   <button
                     type="button"
                     onClick={() => setOpenFaq(isOpen ? null : index)}
-                    className="flex w-full items-center justify-between px-6 py-5 text-left"
+                    className="flex w-full items-center justify-between px-6 py-5 text-left gap-4"
                   >
-                    <span className="font-display text-lg">{faq.question}</span>
+                    <span className="font-display text-base md:text-lg leading-snug">{faq.question}</span>
                     <ChevronDown
-                      className={`h-5 w-5 transition ${
-                        isOpen ? "rotate-180 text-gold-400" : "text-white/60"
-                      }`}
+                      className={`h-5 w-5 flex-shrink-0 transition ${isOpen ? "rotate-180 text-gold-400" : "text-white/60"
+                        }`}
                     />
                   </button>
                   <motion.div

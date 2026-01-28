@@ -31,9 +31,9 @@ export function SiteFooter() {
       <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,rgba(212,175,55,0.03),transparent_60%)]" />
 
       <div className="mx-auto max-w-7xl px-6 md:px-10">
-        <div className="grid grid-cols-1 gap-16 lg:grid-cols-12">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">
           {/* Brand Column - Spans 4 columns */}
-          <div className="lg:col-span-4">
+          <div className="lg:col-span-4 text-center lg:text-left">
             <Link href="/" className="group inline-flex items-center gap-2.5 mb-8">
               <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-gold-500 to-gold-600 shadow-lg shadow-gold-500/20 transition-transform group-hover:scale-105">
                 <Zap size={22} fill="currentColor" className="text-midnight-900" />
@@ -43,12 +43,12 @@ export function SiteFooter() {
               </span>
             </Link>
 
-            <p className="text-sm leading-relaxed text-white/90 mb-10 max-w-sm">
+            <p className="text-sm leading-relaxed text-white/90 mb-10 max-w-sm mx-auto lg:mx-0">
               Australia's premium streaming service. True 4K quality with local infrastructure and expert support.
             </p>
 
             {/* Compact Premium Badges */}
-            <div className="inline-flex flex-wrap gap-2 mb-10">
+            <div className="inline-flex flex-wrap justify-center lg:justify-start gap-2 mb-10">
               {features.map((feature, i) => (
                 <div
                   key={i}
@@ -63,7 +63,7 @@ export function SiteFooter() {
             </div>
 
             {/* Social Links */}
-            <div className="flex items-center gap-3">
+            <div className="flex items-center justify-center lg:justify-start gap-3">
               {socialLinks.map((social) => (
                 <a
                   key={social.label}
@@ -79,8 +79,8 @@ export function SiteFooter() {
             </div>
           </div>
 
-          {/* Navigation Links - Spans 6 columns */}
-          <div className="lg:col-span-5 grid grid-cols-2 gap-12">
+          {/* Navigation Links - Spans 5 columns */}
+          <div className="lg:col-span-5 grid grid-cols-2 gap-8 text-center lg:text-left">
             <div>
               <h4 className="font-display text-[9px] font-bold uppercase tracking-[0.2em] text-white/70 mb-8">
                 Navigation
@@ -119,14 +119,14 @@ export function SiteFooter() {
           </div>
 
           {/* Newsletter - Spans 3 columns */}
-          <div className="lg:col-span-3">
+          <div className="lg:col-span-3 text-center lg:text-left">
             <h4 className="font-display text-[9px] font-bold uppercase tracking-[0.2em] text-white/70 mb-8">
               Newsletter
             </h4>
             <p className="text-sm text-white/90 mb-6 leading-relaxed">
               Exclusive updates on Australian channels.
             </p>
-            <form className="space-y-3">
+            <form className="space-y-3 max-w-xs mx-auto lg:mx-0">
               <input
                 type="email"
                 placeholder="Your email"

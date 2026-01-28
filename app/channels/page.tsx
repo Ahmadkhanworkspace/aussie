@@ -116,9 +116,9 @@ export default function ChannelsPage() {
               <p className="text-lg text-white/70 max-w-2xl mx-auto mb-10">
                 Access the world's largest IPTV library with Australian, UK, USA channels plus 140,000+ movies and series on-demand.
               </p>
-              <div className="flex flex-wrap gap-4 justify-center">
-                <ButtonLink href="/packages">View Packages</ButtonLink>
-                <ButtonLink href="/contact" variant="outline">Request Channel List</ButtonLink>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <ButtonLink href="/packages" className="w-full sm:w-auto">View Packages</ButtonLink>
+                <ButtonLink href="/contact" variant="outline" className="w-full sm:w-auto">Request Channel List</ButtonLink>
               </div>
             </div>
 
@@ -156,7 +156,7 @@ export default function ChannelsPage() {
               </p>
             </div>
 
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
               {categories.map((category) => {
                 const Icon = category.icon;
                 return (
@@ -206,7 +206,7 @@ export default function ChannelsPage() {
             <p className="text-lg text-white/70 mb-8">
               Contact us to receive a detailed breakdown of all available channels and categories
             </p>
-            <ButtonLink href="/contact" className="inline-flex">
+            <ButtonLink href="/contact" className="inline-flex w-full sm:w-auto">
               Get Channel List
             </ButtonLink>
           </div>
