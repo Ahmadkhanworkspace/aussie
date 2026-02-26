@@ -61,7 +61,7 @@ export default function PackagesPage() {
         <PageHero
           title="Premium IPTV Packages"
           subtitle="3, 6, and 12 month plans with instant activation, Australian servers, and buffer-free streaming."
-          primaryCta={{ label: "Subscribe Now", href: "/contact" }}
+          primaryCta={{ label: "Subscribe Now", href: "https://wa.me/447862120843" }}
           secondaryCta={{ label: "Compare Plans", href: "#pricing" }}
           imageLabel="Pricing visuals placeholder"
         />
@@ -110,7 +110,7 @@ export default function PackagesPage() {
                       </div>
                     ))}
                   </div>
-                  <ButtonLink href="/contact" className="mt-auto w-full">
+                  <ButtonLink href="https://wa.me/447862120843" className="mt-auto w-full">
                     Subscribe Now
                   </ButtonLink>
                 </GlassCard>
@@ -121,60 +121,22 @@ export default function PackagesPage() {
 
         <section className="px-6 pb-24 md:px-10 lg:px-16">
           <div className="mx-auto max-w-6xl">
-            <GlassCard className="relative overflow-hidden border-gold-500/20 bg-gradient-to-br from-gold-500/5 to-transparent p-8">
-              {/* Decorative Elements */}
-              <div className="absolute top-0 right-0 w-64 h-64 bg-gold-500/10 rounded-full blur-3xl -z-10" />
-
-              <div className="grid gap-8 md:grid-cols-3">
-                <div className="text-center md:text-left">
-                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gold-500/20 text-gold-500 mb-4">
-                    <BadgeCheck size={24} />
-                  </div>
-                  <h3 className="font-display text-xl font-bold text-white mb-2">
-                    Instant Activation
-                  </h3>
-                  <p className="text-sm text-white/70">
-                    Get your credentials within minutes of purchase. Start streaming immediately.
-                  </p>
-                </div>
-
-                <div className="text-center md:text-left">
-                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gold-500/20 text-gold-500 mb-4">
-                    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                    </svg>
-                  </div>
-                  <h3 className="font-display text-xl font-bold text-white mb-2">
-                    Secure Payment
-                  </h3>
-                  <p className="text-sm text-white/70">
-                    All transactions are encrypted and processed securely through trusted payment gateways.
-                  </p>
-                </div>
-
-                <div className="text-center md:text-left">
-                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gold-500/20 text-gold-500 mb-4">
-                    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                  </div>
-                  <h3 className="font-display text-xl font-bold text-white mb-2">
-                    Money-Back Guarantee
-                  </h3>
-                  <p className="text-sm text-white/70">
-                    Not satisfied? Get a full refund within the first 7 days, no questions asked.
-                  </p>
-                </div>
-              </div>
-
-              <div className="mt-8 pt-8 border-t border-white/10 text-center">
-                <p className="text-sm text-white/60 mb-4">
-                  Have questions about our packages? Our team is here to help.
+            <GlassCard className="flex flex-col items-start gap-6 p-8 md:flex-row md:items-center md:justify-between">
+              <div>
+                <p className="text-sm uppercase tracking-[0.3em] text-gold-400">
+                  Secure Checkout
                 </p>
-                <ButtonLink href="/contact" variant="outline" className="w-full sm:w-auto">
-                  Contact Support
-                </ButtonLink>
+                <h2 className="font-display mt-3 text-2xl font-semibold md:text-3xl">
+                  Ready for Stripe integration
+                </h2>
+                <p className="mt-3 text-sm text-white/70">
+                  Connect payments when you’re ready. The structure is designed
+                  for seamless subscription workflows.
+                </p>
               </div>
+              <ButtonLink href="https://wa.me/447862120843" variant="outline">
+                Talk to Sales
+              </ButtonLink>
             </GlassCard>
           </div>
         </section>
