@@ -16,9 +16,34 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Aussie-iptv | Premium IPTV Streaming Service",
+  metadataBase: new URL("https://aussie-iptv.com"),
+  title: {
+    default: "Aussie-iptv | Premium IPTV Streaming Service Australia",
+    template: "%s | Aussie-iptv"
+  },
   description:
-    "Aussie-iptv delivers premium IPTV with Australian servers, instant activation, and buffer-free streaming in HD & 4K."
+    "Aussie-iptv delivers premium IPTV with Australian servers, instant activation, and buffer-free streaming in HD & 4K.",
+  openGraph: {
+    type: "website",
+    locale: "en_AU",
+    url: "https://aussie-iptv.com",
+    siteName: "Aussie-iptv",
+    images: [{
+      url: "/og-image.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Aussie-iptv Premium Streaming"
+    }]
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@aussieiptv",
+    creator: "@aussieiptv"
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png"
+  }
 };
 
 export default function RootLayout({
@@ -27,7 +52,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en-AU">
       <body
         className={`${inter.variable} ${poppins.variable} bg-midnight-900 text-white antialiased`}
       >
