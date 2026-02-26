@@ -298,7 +298,7 @@ export default function HomePage() {
                 Zero Buffering
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                <ButtonLink href="/packages" className="w-full sm:w-auto">Get Started</ButtonLink>
+                <ButtonLink href="https://wa.me/447862120843" className="w-full sm:w-auto">Get Started</ButtonLink>
                 <ButtonLink href="/packages" variant="outline" className="w-full sm:w-auto">
                   View Packages
                 </ButtonLink>
@@ -439,8 +439,8 @@ export default function HomePage() {
                 )}
                 <GlassCard
                   className={`flex h-full flex-col gap-6 p-8 ${plan.highlight
-                      ? "relative z-20 border-gold-400/50 shadow-glow"
-                      : "border-white/10"
+                    ? "relative z-20 border-gold-400/50 shadow-glow"
+                    : "border-white/10"
                     }`}
                 >
                   <div>
@@ -465,7 +465,7 @@ export default function HomePage() {
                       </div>
                     ))}
                   </div>
-                  <ButtonLink href="/packages" className="mt-auto w-full">
+                  <ButtonLink href="https://wa.me/447862120843" className="mt-auto w-full">
                     Subscribe Now
                   </ButtonLink>
                 </GlassCard>
@@ -636,7 +636,7 @@ export default function HomePage() {
                     Secure your spot with Australia’s most trusted IPTV service.
                   </p>
                 </div>
-                <ButtonLink href="/packages">Get Instant Access</ButtonLink>
+                <ButtonLink href="https://wa.me/447862120843">Get Instant Access</ButtonLink>
               </div>
             </GlassCard>
           </div>

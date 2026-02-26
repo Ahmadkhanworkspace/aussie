@@ -16,8 +16,8 @@ const contactMethods = [
   {
     icon: MessageCircle,
     title: "WhatsApp",
-    value: "+47 3806 00578",
-    link: "https://wa.me/47380600578",
+    value: "+44 7862 120843",
+    link: "https://wa.me/447862120843",
     description: "Instant messaging support",
     color: "from-green-500/20 to-emerald-500/20"
   },

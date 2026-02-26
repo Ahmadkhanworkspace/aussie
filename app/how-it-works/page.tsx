@@ -91,8 +91,8 @@ export default function HowItWorksPage() {
                 Get started with premium IPTV in just 4 simple steps. From package selection to streaming in under 5 minutes.
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
-                <ButtonLink href="/packages">Get Started Now</ButtonLink>
-                <ButtonLink href="/contact" variant="outline">Need Help?</ButtonLink>
+                <ButtonLink href="https://wa.me/447862120843">Get Started Now</ButtonLink>
+                <ButtonLink href="https://wa.me/447862120843" variant="outline">Need Help?</ButtonLink>
               </div>
             </div>
 
