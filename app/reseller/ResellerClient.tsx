@@ -69,7 +69,7 @@ export default function ResellerClient() {
                                 Launch your premium IPTV business with Australian infrastructure, instant activation, and wholesale pricing designed for growth.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <ButtonLink href="https://wa.me/447862120843" className="w-full sm:w-auto">Apply Now</ButtonLink>
+                                <ButtonLink href="https://wa.me/61480008637" className="w-full sm:w-auto">Apply Now</ButtonLink>
                                 <ButtonLink href="/packages" variant="outline" className="w-full sm:w-auto">View Pricing</ButtonLink>
                             </div>
                         </div>
@@ -180,7 +180,7 @@ export default function ResellerClient() {
                                     Apply for our reseller program and get access to wholesale pricing, professional tools, and dedicated support. We'll respond within 24 hours.
                                 </p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                    <ButtonLink href="https://wa.me/447862120843" className="w-full sm:w-auto">Submit Application</ButtonLink>
+                                    <ButtonLink href="https://wa.me/61480008637" className="w-full sm:w-auto">Submit Application</ButtonLink>
                                     <ButtonLink href="/packages" variant="outline" className="w-full sm:w-auto">View Packages</ButtonLink>
                                 </div>
                             </div>

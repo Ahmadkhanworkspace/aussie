@@ -61,7 +61,7 @@ export default function PackagesClient() {
                 <PageHero
                     title="Premium IPTV Packages"
                     subtitle="3, 6, and 12 month plans with instant activation, Australian servers, and buffer-free streaming."
-                    primaryCta={{ label: "Subscribe Now", href: "https://wa.me/447862120843" }}
+                    primaryCta={{ label: "Subscribe Now", href: "https://wa.me/61480008637" }}
                     secondaryCta={{ label: "Compare Plans", href: "#pricing" }}
                     imageLabel="Pricing visuals placeholder"
                 />
@@ -110,7 +110,7 @@ export default function PackagesClient() {
                                             </div>
                                         ))}
                                     </div>
-                                    <ButtonLink href="https://wa.me/447862120843" className="mt-auto w-full">
+                                    <ButtonLink href="https://wa.me/61480008637" className="mt-auto w-full">
                                         Subscribe Now
                                     </ButtonLink>
                                 </GlassCard>
@@ -171,7 +171,7 @@ export default function PackagesClient() {
                                 <p className="text-sm text-white/60 mb-4">
                                     Have questions about our packages? Our team is here to help.
                                 </p>
-                                <ButtonLink href="https://wa.me/447862120843" variant="outline" className="w-full sm:w-auto">
+                                <ButtonLink href="https://wa.me/61480008637" variant="outline" className="w-full sm:w-auto">
                                     Contact Support
                                 </ButtonLink>
                             </div>

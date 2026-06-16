@@ -12,7 +12,7 @@ const footerLinks = [
 ];
 
 const socialLinks = [
-  { href: "https://wa.me/47380600578", icon: MessageCircle, label: "WhatsApp" },
+  { href: "https://wa.me/61480008637", icon: MessageCircle, label: "WhatsApp" },
   { href: "https://t.me/+447449881139", icon: SendHorizontal, label: "Telegram" },
 ];
 
